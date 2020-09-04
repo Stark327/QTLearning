@@ -1,9 +1,13 @@
 #include "mainwindow.h"
 
 #include <QApplication>
+#include <iostream>
 
 
 QUdpSocket *socket;
+
+using namespace std;
+
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
@@ -11,6 +15,7 @@ int main(int argc, char *argv[])
     QByteArray array;
     w.show();
 
+    cout<<"hello"<<endl;
 //    socket = new QUdpSocket();
 //    socket->bind(QHostAddress(QHostAddress::Any),50002);
 //    while(!socket->hasPendingDatagrams());
